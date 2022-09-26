@@ -1,0 +1,50 @@
+.container{
+  max-width: 92%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.flex-item1{
+  flex-basis: 45%;
+}
+@media screen and (max-width: 700px) {
+  .flex-item1 {
+    flex-basis: 100%;
+  }
+}
+.flex-item1 p{
+  font-size: 1.5rem;
+}
+.flex-item2 {
+  flex-basis: 45%;
+  flex-grow: 1;
+}
+@media screen and (max-width: 700px) {
+  .flex-item2 {
+    flex-basis: 100%;
+  }
+}
+.item-image{
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+@media screen and (max-width: 700px) {
+  .item-image {
+    height: 60vh;
+  }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせフォーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="contanct-wrapper">
+      <h1>お問い合わせフォーム</h1>
+      <form action="mailto:forest.book.programmer@gmail.com" method="post" enctype="text/plain">
+        <div class="field-item">
+          <label for="name">お名前</label>
+          <input type="text" name="name" id="name" class="input-field">
+        </div>
+        <div class="field-item">
+          <label for="email">メールアドレス</label>
+          <input type="email" name="email" id="email" class="input-field" required>
+        </div>
+        <div class="field-item">
+          <label for="genre">お問い合わせの種類</label>
+          <select name="genre" id="genre" class="select-field">
+            <option value="" disabled selected>選択してください</option>
+            <option value="question">質問</option>
+            <option value="opinion">ご意見</option>
+            <option value="other">その他</option>
+          </select>
+        </div>
+        <div class="field-item">
+          <label for="content">お問い合わせ内容</label>
+          <textarea name="content" id="content" cols="30" rows="10" class="input-field"></textarea>
+        </div>
+
+        <div class="">
+          <label for="privacy-policy" class="checkbox-label">
+            <input type="checkbox" name="privacy-policy" id="privacy-policy" hidden class="checkbox-field" checked
+              required>
+            <span class="checkbox-icon"></span>
+            <span class="checkbox-text">個人情報の取り扱いについて</span>
+          </label>
+        </div>
+        <div class="submit-button">
+          <input type="submit" class="btn--submit" value="メールを送信します" />
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeiWeb-フレックスボックス課題3</title>
+  <link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__wrapper">
+      <div class="wrapper">
+        <div class="header-left">
+          <input type="checkbox" hidden id="nav-toggle">
+          <div class="header-facet js-facet">
+            <label for="nav-toggle">
+              <p class="header-facet__text">絞り込み検索</p>
+            </label>
+          </div>
+          <nav class="nav">
+            <ul class="nav__wrapper">
+              <li class="nav__item"><strong>在庫</strong>　在庫あり 在庫なし</li>
+              <li class="nav__item"><strong>サイズ</strong>　S M L</li>
+              <li class="nav__item"><strong>金額</strong>　0円 <input type="range" name="speed" min="0" max="30000"
+                  step="1000">30,000円 </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="header-button">
+            並び替え↓
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header End -->
+</body>
+
+</html>

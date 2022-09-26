@@ -1,0 +1,160 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+.site-header{
+  background-color: #def7ff;
+}
+@media screen and (max-width: 600px) {
+  .site-header {
+    border: 1px solid #000;
+    background-color: #fff;
+    height: 80px;
+  }
+}
+.site-header__wrapper {
+  margin: 0 auto;
+  width: 95%;
+}
+@media screen and (max-width: 600px) {
+  .site-header__wrapper {
+    width: 100%;
+  }
+}
+.wrapper{
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    justify-content: center;
+    gap: 0;
+    height: 80px;
+  }
+}
+
+.header-left{
+  display: flex;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  .header-left {
+    display: block;
+    border-right: 1px solid #000;
+    width: 50%;
+    height: 80px;
+  }
+}
+
+.nav__wrapper {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  .nav__wrapper {
+    flex-direction: column;
+  }
+}
+.header-facet{
+  position: relative;
+}
+@media screen and (max-width: 885px) {
+  .header-facet {
+    margin: 0;
+    width: 180px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-facet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+  }
+}
+
+.header-facet::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -8px;
+  display: inline-block;
+  margin: 16px 0;
+  width: 1px;
+  height: 20px;
+  background-color: #030303;
+}
+@media screen and (max-width: 885px) {
+  .header-facet::after {
+    right: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-facet::after {
+    background-color: #fff;
+  }
+  .header-facet__text::after {
+  content: "↓";
+  position: absolute;
+  top: 24px;
+  display: inline-block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .header-right {
+    width: 50%;
+    height: 80px;
+  }
+}
+  .header-button {
+    padding: 5px;
+    background-color: #eee;
+    border: 1px solid #000;
+  }
+
+@media screen and (max-width: 885px) {
+  .header-button {
+    width: 100px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    background-color: #fff;
+  }
+}
+
+/* アコーディオン処理 */
+@media screen and (max-width: 600px) {
+  .nav {
+    height: 0;
+    width: 100vw;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+  #nav-toggle:checked ~ .nav {
+    border: 1px solid black;
+    width: 100vw;
+    height: 150px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+/* アコーディオン処理 終了 */
